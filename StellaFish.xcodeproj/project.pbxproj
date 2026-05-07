@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016D31BC36E713FFEE8689FD /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACC80722F5EDBEE14EF6B6 /* ChecklistView.swift */; };
+		0DA837E20A0D702CFA996DB4 /* TicketCostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81829AF77E013913EF098AA0 /* TicketCostTests.swift */; };
+		10DF2A53787ACD0D850BD82D /* TicketSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AE15A802A56507A6863CBA /* TicketSnapshot.swift */; };
+		24EDBB7E080E1B1078A62A2E /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245F289B99AA59E93EA5852 /* City.swift */; };
+		260DAD2988C66870EAB66563 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356CB7329C957F2530B39C5E /* ChecklistItem.swift */; };
+		335CE6595F7F762EEA22A1C8 /* ExpenseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A5CCCAC44848E42EE9B14 /* ExpenseParser.swift */; };
+		4879C62FE97040D260EDE672 /* Date+Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB80A24E0FF79BA6A29ECB /* Date+Weekday.swift */; };
+		4A2AE1704057BAEB6D03ECC0 /* TripRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0E798A6E5F9378AF6CDD0 /* TripRepositoryProtocol.swift */; };
+		4D3B95A3B3238DE4DA4B5322 /* StellaFishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BC35ACA65F40EB2C058D4 /* StellaFishApp.swift */; };
+		5C55FFA559EA289DD3BBAE83 /* ExpenseRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DD41DDC4C61E7A59E293F /* ExpenseRepositoryProtocol.swift */; };
+		5F20EB614349443A234CE7F8 /* ExpenseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B019DFDF73447EDB748FE /* ExpenseListView.swift */; };
+		66BEDA4C7C2D130B448A9378 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4008B1D02C71DD68CDD889CC /* TripListView.swift */; };
+		7B602D9D48F7CFD73F002054 /* HotelCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39FCD7A62169EFE4985F91 /* HotelCandidate.swift */; };
+		7E3B3AF29DCCA46DC62AAE98 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E16505AA4B67CD4F8FF84 /* SettingsView.swift */; };
+		86D8E9ECCF46C21B3B7FD1C4 /* Double+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7021FADE5D1365B5623E44 /* Double+Currency.swift */; };
+		8F77C64564F6A7D353242714 /* LocalExpenseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46152487F713A3889278674 /* LocalExpenseRepository.swift */; };
+		9342C851FEBA113B60410BF2 /* LocalTripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC6C8A4B0BF94C5A09FD661 /* LocalTripRepository.swift */; };
+		942634767555F363DE1FFA48 /* README.sample in Resources */ = {isa = PBXBuildFile; fileRef = B590B9DB8A108CAB1E83B6A0 /* README.sample */; };
+		95F96C84569117B7A8B29112 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A7D0CF34B22B374693FF0 /* AppColors.swift */; };
+		99EBDBE7D3D0A10D4DC3C3C6 /* AIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD246F07828399524E82A055 /* AIView.swift */; };
+		B933E8D5D0454E5019D4CF8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C11831901AFF2DB0AD65ED /* ContentView.swift */; };
+		BF1C9F4DE333CB22818B0123 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = B8A461F6698DA9B86DD347E9 /* cities.json */; };
+		CD20EF0D86EE2F8FFEF7FDAD /* ExpenseParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC27998C867047DD8E52322 /* ExpenseParserTests.swift */; };
+		D3187546335BE77EB8959C27 /* ExpenseRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E81007E41B936F81A07A06 /* ExpenseRecord.swift */; };
+		DC867CF944420479DF04BE80 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5543CB526E9B513238B4938 /* DashboardView.swift */; };
+		E703553CC0E0526D87C4A1B1 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063C4D7CBE9C3BED313B3A6A /* Enums.swift */; };
+		E99CBAB9FF38F0D5CF82E83D /* TransportTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E99801E8868691C27C89F54 /* TransportTask.swift */; };
+		F9DA6D1601B76D305D9936FB /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A24F8D92F0BB50C2ABA83 /* Trip.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7B299FC515A7ACA77949BDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629FD6687C5A7F792244F146 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EF87C1426FAB29505D854D4;
+			remoteInfo = StellaFish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		063C4D7CBE9C3BED313B3A6A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		064CD9B44C772D6F83D41388 /* index */ = {isa = PBXFileReference; path = index; sourceTree = "<group>"; };
+		069BD32B2BD84CCB1D07B8D6 /* c19cc17a1d6452956495c8f392c3673f08a9eb */ = {isa = PBXFileReference; path = c19cc17a1d6452956495c8f392c3673f08a9eb; sourceTree = "<group>"; };
+		0E39FCD7A62169EFE4985F91 /* HotelCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCandidate.swift; sourceTree = "<group>"; };
+		1334AB3C01B33D27A031FB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1B3DD41DDC4C61E7A59E293F /* ExpenseRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRepositoryProtocol.swift; sourceTree = "<group>"; };
+		281BC35ACA65F40EB2C058D4 /* StellaFishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellaFishApp.swift; sourceTree = "<group>"; };
+		2B881C869DF1917805F0723B /* main */ = {isa = PBXFileReference; path = main; sourceTree = "<group>"; };
+		30C24E3E9DAAA0587DC3E08A /* c00596a7fca3f3d4bdd64053b69d86745f9e10 */ = {isa = PBXFileReference; path = c00596a7fca3f3d4bdd64053b69d86745f9e10; sourceTree = "<group>"; };
+		3245F289B99AA59E93EA5852 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		356CB7329C957F2530B39C5E /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		39DEB8D1C8EE05818EC0BA06 /* 05880107db52fdcc2a49e2cd1cd14ced699c85 */ = {isa = PBXFileReference; path = 05880107db52fdcc2a49e2cd1cd14ced699c85; sourceTree = "<group>"; };
+		3E99801E8868691C27C89F54 /* TransportTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTask.swift; sourceTree = "<group>"; };
+		4008B1D02C71DD68CDD889CC /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
+		43FB80A24E0FF79BA6A29ECB /* Date+Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Weekday.swift"; sourceTree = "<group>"; };
+		4D71E5506C38805B5490DFED /* 33721dda7cf69b67b5012b17e7764a87d8a342 */ = {isa = PBXFileReference; path = 33721dda7cf69b67b5012b17e7764a87d8a342; sourceTree = "<group>"; };
+		551B50F0051697644EA8DC07 /* 889ff98e8c23b4a564a8cc6e4f4d3943f40003 */ = {isa = PBXFileReference; path = 889ff98e8c23b4a564a8cc6e4f4d3943f40003; sourceTree = "<group>"; };
+		5C36419D7073FF9704574A67 /* StellaFish.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StellaFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6006B725093BC90514D5D7FE /* 2e18c2074856f44e6a045d7b362d0d3bc0b435 */ = {isa = PBXFileReference; path = 2e18c2074856f44e6a045d7b362d0d3bc0b435; sourceTree = "<group>"; };
+		689F761027C09046B8ED8008 /* config */ = {isa = PBXFileReference; path = config; sourceTree = "<group>"; };
+		695176471712E0F058EEAA6C /* 6bd324c26d854187559f27f8194c8afd1795ac */ = {isa = PBXFileReference; path = 6bd324c26d854187559f27f8194c8afd1795ac; sourceTree = "<group>"; };
+		6C7021FADE5D1365B5623E44 /* Double+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Currency.swift"; sourceTree = "<group>"; };
+		6D9A24F8D92F0BB50C2ABA83 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		7DE0E798A6E5F9378AF6CDD0 /* TripRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepositoryProtocol.swift; sourceTree = "<group>"; };
+		81829AF77E013913EF098AA0 /* TicketCostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCostTests.swift; sourceTree = "<group>"; };
+		81E81007E41B936F81A07A06 /* ExpenseRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseRecord.swift; sourceTree = "<group>"; };
+		82BDEC84F5F9D7E75C90B3A0 /* 3ddbd8b83554dd093b4ca5384ac76ccdfbb283 */ = {isa = PBXFileReference; path = 3ddbd8b83554dd093b4ca5384ac76ccdfbb283; sourceTree = "<group>"; };
+		8BF9D1DB52DF94887402C040 /* 86dd13dc109e693a05e6b342c790027e34c10a */ = {isa = PBXFileReference; path = 86dd13dc109e693a05e6b342c790027e34c10a; sourceTree = "<group>"; };
+		9141F41622273DC7197B96B7 /* 4e307c3fda86923948fba141a84ed776419440 */ = {isa = PBXFileReference; path = 4e307c3fda86923948fba141a84ed776419440; sourceTree = "<group>"; };
+		9D94E7577E085F3493597B37 /* 8789700816459c1e1480e0b34781d9fb78a1ca */ = {isa = PBXFileReference; path = 8789700816459c1e1480e0b34781d9fb78a1ca; sourceTree = "<group>"; };
+		A30AAA150F6AB832A690DD9E /* description */ = {isa = PBXFileReference; path = description; sourceTree = "<group>"; };
+		A5C11831901AFF2DB0AD65ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A735B1542EA67E72377B2872 /* c8e5319faa58bc020796745101592d09bb113d */ = {isa = PBXFileReference; path = c8e5319faa58bc020796745101592d09bb113d; sourceTree = "<group>"; };
+		A8B03C2D6EA064A065B1CB92 /* dd57d4d9ba1e1948882a1229b556a94b582a8c */ = {isa = PBXFileReference; path = dd57d4d9ba1e1948882a1229b556a94b582a8c; sourceTree = "<group>"; };
+		AB2BD51C376F712C72ADC507 /* exclude */ = {isa = PBXFileReference; path = exclude; sourceTree = "<group>"; };
+		ACACC80722F5EDBEE14EF6B6 /* ChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistView.swift; sourceTree = "<group>"; };
+		B46152487F713A3889278674 /* LocalExpenseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalExpenseRepository.swift; sourceTree = "<group>"; };
+		B590B9DB8A108CAB1E83B6A0 /* README.sample */ = {isa = PBXFileReference; path = README.sample; sourceTree = "<group>"; };
+		B5AE15A802A56507A6863CBA /* TicketSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSnapshot.swift; sourceTree = "<group>"; };
+		B8A461F6698DA9B86DD347E9 /* cities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		BAC6C8A4B0BF94C5A09FD661 /* LocalTripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTripRepository.swift; sourceTree = "<group>"; };
+		CD246F07828399524E82A055 /* AIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIView.swift; sourceTree = "<group>"; };
+		CE0A7D0CF34B22B374693FF0 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		CE4A5CCCAC44848E42EE9B14 /* ExpenseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseParser.swift; sourceTree = "<group>"; };
+		D16E16505AA4B67CD4F8FF84 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D24923A5C94934803A89CBB5 /* 9434a6254f0e9651f402737811be6634a03e9c */ = {isa = PBXFileReference; path = 9434a6254f0e9651f402737811be6634a03e9c; sourceTree = "<group>"; };
+		D2544DC7FF2118729348B9C2 /* HEAD */ = {isa = PBXFileReference; path = HEAD; sourceTree = "<group>"; };
+		D2C367063471AA838ECD32D2 /* 2654b2d6bf8dc7ec805a4d11ea44e62a6f01de */ = {isa = PBXFileReference; path = 2654b2d6bf8dc7ec805a4d11ea44e62a6f01de; sourceTree = "<group>"; };
+		DE48A2FB7E1674EB9348DB44 /* HEAD */ = {isa = PBXFileReference; path = HEAD; sourceTree = "<group>"; };
+		E16BAC26641C2B6ED8B97EC4 /* StellaFishTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = StellaFishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FCA2E26B08864D6B493094 /* main */ = {isa = PBXFileReference; path = main; sourceTree = "<group>"; };
+		EAC27998C867047DD8E52322 /* ExpenseParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseParserTests.swift; sourceTree = "<group>"; };
+		EBAAADB7A49223BEA9BE8956 /* 46cbc6e7306fe5944ceb3b2dc14953c9158064 */ = {isa = PBXFileReference; path = 46cbc6e7306fe5944ceb3b2dc14953c9158064; sourceTree = "<group>"; };
+		EC5B019DFDF73447EDB748FE /* ExpenseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseListView.swift; sourceTree = "<group>"; };
+		F5543CB526E9B513238B4938 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FEE317A0A5BE26A6464ADD3D /* COMMIT_EDITMSG */ = {isa = PBXFileReference; path = COMMIT_EDITMSG; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		11C6FDBCBE1A984C0CF82EDA /* logs */ = {
+			isa = PBXGroup;
+			children = (
+				D2544DC7FF2118729348B9C2 /* HEAD */,
+				EAE3285CEFC8C313D050221A /* refs */,
+			);
+			path = logs;
+			sourceTree = "<group>";
+		};
+		15CF76F6A443FC2E672CD7FC /* 78 */ = {
+			isa = PBXGroup;
+			children = (
+				8BF9D1DB52DF94887402C040 /* 86dd13dc109e693a05e6b342c790027e34c10a */,
+			);
+			path = 78;
+			sourceTree = "<group>";
+		};
+		1625A3FE077973D8BCF9C74A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8A461F6698DA9B86DD347E9 /* cities.json */,
+				1334AB3C01B33D27A031FB1C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1ECB47BF2DAEFE72F757818C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D16E16505AA4B67CD4F8FF84 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		20EE9CE3A90D7F2AFD5D451F /* 7c */ = {
+			isa = PBXGroup;
+			children = (
+				551B50F0051697644EA8DC07 /* 889ff98e8c23b4a564a8cc6e4f4d3943f40003 */,
+			);
+			path = 7c;
+			sourceTree = "<group>";
+		};
+		2258758388D53BDB6CB09D62 /* eb */ = {
+			isa = PBXGroup;
+			children = (
+				9D94E7577E085F3493597B37 /* 8789700816459c1e1480e0b34781d9fb78a1ca */,
+			);
+			path = eb;
+			sourceTree = "<group>";
+		};
+		27E021EADC8450E763227E14 /* heads */ = {
+			isa = PBXGroup;
+			children = (
+				E2FCA2E26B08864D6B493094 /* main */,
+			);
+			path = heads;
+			sourceTree = "<group>";
+		};
+		27E3BA747A7E9C87FCD77C89 /* d9 */ = {
+			isa = PBXGroup;
+			children = (
+				069BD32B2BD84CCB1D07B8D6 /* c19cc17a1d6452956495c8f392c3673f08a9eb */,
+			);
+			path = d9;
+			sourceTree = "<group>";
+		};
+		3B416BB04293D8A41642E271 /* 5d */ = {
+			isa = PBXGroup;
+			children = (
+				A8B03C2D6EA064A065B1CB92 /* dd57d4d9ba1e1948882a1229b556a94b582a8c */,
+			);
+			path = 5d;
+			sourceTree = "<group>";
+		};
+		3B469ADC623C7C80B2C999CC /* 23 */ = {
+			isa = PBXGroup;
+			children = (
+				39DEB8D1C8EE05818EC0BA06 /* 05880107db52fdcc2a49e2cd1cd14ced699c85 */,
+			);
+			path = 23;
+			sourceTree = "<group>";
+		};
+		3BCFCF8ABC6E057795184EAA /* 91 */ = {
+			isa = PBXGroup;
+			children = (
+				D24923A5C94934803A89CBB5 /* 9434a6254f0e9651f402737811be6634a03e9c */,
+				A735B1542EA67E72377B2872 /* c8e5319faa58bc020796745101592d09bb113d */,
+			);
+			path = 91;
+			sourceTree = "<group>";
+		};
+		41B3D310AB165DD233D2759F /* StellaFish */ = {
+			isa = PBXGroup;
+			children = (
+				D8FE1A49FB514BB38806CE64 /* .git */,
+				8A0E037CD08A82B7A6FE8219 /* App */,
+				E3D873847BAA8EFF2D05E64B /* Core */,
+				855FF4131ED720002D2F8E15 /* Features */,
+				1625A3FE077973D8BCF9C74A /* Resources */,
+				8F82297589DFBAE4AEDB6473 /* UI */,
+			);
+			path = StellaFish;
+			sourceTree = "<group>";
+		};
+		4E2EC9C567112868975B8CA0 /* f4 */ = {
+			isa = PBXGroup;
+			children = (
+				6006B725093BC90514D5D7FE /* 2e18c2074856f44e6a045d7b362d0d3bc0b435 */,
+			);
+			path = f4;
+			sourceTree = "<group>";
+		};
+		54340227D62961D2FFFD9BCB /* heads */ = {
+			isa = PBXGroup;
+			children = (
+				2B881C869DF1917805F0723B /* main */,
+			);
+			path = heads;
+			sourceTree = "<group>";
+		};
+		581CA18639F330B8C0FDF2FF /* 98 */ = {
+			isa = PBXGroup;
+			children = (
+				695176471712E0F058EEAA6C /* 6bd324c26d854187559f27f8194c8afd1795ac */,
+			);
+			path = 98;
+			sourceTree = "<group>";
+		};
+		5961F086F1E75E5209F6C23F /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				9256F4DB6C00E24EF7307C96 /* 3a */,
+				3B416BB04293D8A41642E271 /* 5d */,
+				C98E15F70DA8794D0C712E52 /* 06 */,
+				20EE9CE3A90D7F2AFD5D451F /* 7c */,
+				3B469ADC623C7C80B2C999CC /* 23 */,
+				E169027D8025A99FA09B2F92 /* 25 */,
+				5CF5320B285F243CC5EF92EA /* 69 */,
+				DE3A6FAB5374FD401F9B0DE9 /* 73 */,
+				15CF76F6A443FC2E672CD7FC /* 78 */,
+				3BCFCF8ABC6E057795184EAA /* 91 */,
+				581CA18639F330B8C0FDF2FF /* 98 */,
+				27E3BA747A7E9C87FCD77C89 /* d9 */,
+				9D12D4CC2181B5B42482083B /* db */,
+				2258758388D53BDB6CB09D62 /* eb */,
+				4E2EC9C567112868975B8CA0 /* f4 */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		5CF5320B285F243CC5EF92EA /* 69 */ = {
+			isa = PBXGroup;
+			children = (
+				D2C367063471AA838ECD32D2 /* 2654b2d6bf8dc7ec805a4d11ea44e62a6f01de */,
+			);
+			path = 69;
+			sourceTree = "<group>";
+		};
+		649869D131B587A90F4619E4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1B3DD41DDC4C61E7A59E293F /* ExpenseRepositoryProtocol.swift */,
+				7DE0E798A6E5F9378AF6CDD0 /* TripRepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		81E37DFCCC20C302C569B41E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				B46152487F713A3889278674 /* LocalExpenseRepository.swift */,
+				BAC6C8A4B0BF94C5A09FD661 /* LocalTripRepository.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		855FF4131ED720002D2F8E15 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC4EF840716CF73A6493F0 /* AI */,
+				8F3FE8263288C5B0277FC0F0 /* Checklist */,
+				A4DB5347EDC8A450CD63B757 /* Dashboard */,
+				E97FAF6CD8F93EAE878403B3 /* Expense */,
+				1ECB47BF2DAEFE72F757818C /* Settings */,
+				F58865D9660CCD88BF4BA228 /* Trip */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8A0E037CD08A82B7A6FE8219 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A5C11831901AFF2DB0AD65ED /* ContentView.swift */,
+				281BC35ACA65F40EB2C058D4 /* StellaFishApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8ABEE7C36DF5BF7F1ABCC4B6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				81E37DFCCC20C302C569B41E /* Local */,
+				649869D131B587A90F4619E4 /* Protocols */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8F3FE8263288C5B0277FC0F0 /* Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				ACACC80722F5EDBEE14EF6B6 /* ChecklistView.swift */,
+			);
+			path = Checklist;
+			sourceTree = "<group>";
+		};
+		8F82297589DFBAE4AEDB6473 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A63E6CE2EE3FA778E6E87C2C /* Extensions */,
+				B16DDA6B131C0DE4871D933B /* Theme */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9256F4DB6C00E24EF7307C96 /* 3a */ = {
+			isa = PBXGroup;
+			children = (
+				4D71E5506C38805B5490DFED /* 33721dda7cf69b67b5012b17e7764a87d8a342 */,
+			);
+			path = 3a;
+			sourceTree = "<group>";
+		};
+		9D12D4CC2181B5B42482083B /* db */ = {
+			isa = PBXGroup;
+			children = (
+				9141F41622273DC7197B96B7 /* 4e307c3fda86923948fba141a84ed776419440 */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		9FCC4EF840716CF73A6493F0 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				CD246F07828399524E82A055 /* AIView.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		A3C3EECC1BEBCACFFB138EF4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A5CCCAC44848E42EE9B14 /* ExpenseParser.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A4DB5347EDC8A450CD63B757 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F5543CB526E9B513238B4938 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A63E6CE2EE3FA778E6E87C2C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43FB80A24E0FF79BA6A29ECB /* Date+Weekday.swift */,
+				6C7021FADE5D1365B5623E44 /* Double+Currency.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B05FD3D568D700A3582D4963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C36419D7073FF9704574A67 /* StellaFish.app */,
+				E16BAC26641C2B6ED8B97EC4 /* StellaFishTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B16DDA6B131C0DE4871D933B /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				CE0A7D0CF34B22B374693FF0 /* AppColors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		B4A42B2B31E87B85D71C6C9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				356CB7329C957F2530B39C5E /* ChecklistItem.swift */,
+				3245F289B99AA59E93EA5852 /* City.swift */,
+				063C4D7CBE9C3BED313B3A6A /* Enums.swift */,
+				81E81007E41B936F81A07A06 /* ExpenseRecord.swift */,
+				0E39FCD7A62169EFE4985F91 /* HotelCandidate.swift */,
+				B5AE15A802A56507A6863CBA /* TicketSnapshot.swift */,
+				3E99801E8868691C27C89F54 /* TransportTask.swift */,
+				6D9A24F8D92F0BB50C2ABA83 /* Trip.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B895F777D8D1910BCC98FAF6 /* hooks */ = {
+			isa = PBXGroup;
+			children = (
+				B590B9DB8A108CAB1E83B6A0 /* README.sample */,
+			);
+			path = hooks;
+			sourceTree = "<group>";
+		};
+		C98E15F70DA8794D0C712E52 /* 06 */ = {
+			isa = PBXGroup;
+			children = (
+				EBAAADB7A49223BEA9BE8956 /* 46cbc6e7306fe5944ceb3b2dc14953c9158064 */,
+			);
+			path = 06;
+			sourceTree = "<group>";
+		};
+		CA35E6A2749D3164E4EF0982 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				AB2BD51C376F712C72ADC507 /* exclude */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		CD8D2728BB58413BB3DD6C60 = {
+			isa = PBXGroup;
+			children = (
+				41B3D310AB165DD233D2759F /* StellaFish */,
+				F7D05F282A7C5310CDA6A957 /* StellaFishTests */,
+				B05FD3D568D700A3582D4963 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8FE1A49FB514BB38806CE64 /* .git */ = {
+			isa = PBXGroup;
+			children = (
+				FEE317A0A5BE26A6464ADD3D /* COMMIT_EDITMSG */,
+				689F761027C09046B8ED8008 /* config */,
+				A30AAA150F6AB832A690DD9E /* description */,
+				DE48A2FB7E1674EB9348DB44 /* HEAD */,
+				064CD9B44C772D6F83D41388 /* index */,
+				B895F777D8D1910BCC98FAF6 /* hooks */,
+				CA35E6A2749D3164E4EF0982 /* info */,
+				11C6FDBCBE1A984C0CF82EDA /* logs */,
+				5961F086F1E75E5209F6C23F /* objects */,
+				E936575EE22DCF9B607F181E /* refs */,
+			);
+			path = .git;
+			sourceTree = "<group>";
+		};
+		DE3A6FAB5374FD401F9B0DE9 /* 73 */ = {
+			isa = PBXGroup;
+			children = (
+				30C24E3E9DAAA0587DC3E08A /* c00596a7fca3f3d4bdd64053b69d86745f9e10 */,
+			);
+			path = 73;
+			sourceTree = "<group>";
+		};
+		E169027D8025A99FA09B2F92 /* 25 */ = {
+			isa = PBXGroup;
+			children = (
+				82BDEC84F5F9D7E75C90B3A0 /* 3ddbd8b83554dd093b4ca5384ac76ccdfbb283 */,
+			);
+			path = 25;
+			sourceTree = "<group>";
+		};
+		E3D873847BAA8EFF2D05E64B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B4A42B2B31E87B85D71C6C9C /* Models */,
+				8ABEE7C36DF5BF7F1ABCC4B6 /* Repositories */,
+				A3C3EECC1BEBCACFFB138EF4 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E936575EE22DCF9B607F181E /* refs */ = {
+			isa = PBXGroup;
+			children = (
+				27E021EADC8450E763227E14 /* heads */,
+			);
+			path = refs;
+			sourceTree = "<group>";
+		};
+		E97FAF6CD8F93EAE878403B3 /* Expense */ = {
+			isa = PBXGroup;
+			children = (
+				EC5B019DFDF73447EDB748FE /* ExpenseListView.swift */,
+			);
+			path = Expense;
+			sourceTree = "<group>";
+		};
+		EAE3285CEFC8C313D050221A /* refs */ = {
+			isa = PBXGroup;
+			children = (
+				54340227D62961D2FFFD9BCB /* heads */,
+			);
+			path = refs;
+			sourceTree = "<group>";
+		};
+		F58865D9660CCD88BF4BA228 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				4008B1D02C71DD68CDD889CC /* TripListView.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		F7D05F282A7C5310CDA6A957 /* StellaFishTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAC27998C867047DD8E52322 /* ExpenseParserTests.swift */,
+				81829AF77E013913EF098AA0 /* TicketCostTests.swift */,
+			);
+			path = StellaFishTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B485B01B249554BCAFA1099 /* StellaFishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68484859D4E6D945DC6BE2EB /* Build configuration list for PBXNativeTarget "StellaFishTests" */;
+			buildPhases = (
+				AD6E102920F67DEA9E840E8A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD43C4221285F3904892A1B7 /* PBXTargetDependency */,
+			);
+			name = StellaFishTests;
+			productName = StellaFishTests;
+			productReference = E16BAC26641C2B6ED8B97EC4 /* StellaFishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EF87C1426FAB29505D854D4 /* StellaFish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D96F995A88033297F525AF /* Build configuration list for PBXNativeTarget "StellaFish" */;
+			buildPhases = (
+				97EC10E5E8C404EDE18FC4BF /* Sources */,
+				DEF66DB7DCAF64F1BF8F9D20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StellaFish;
+			productName = StellaFish;
+			productReference = 5C36419D7073FF9704574A67 /* StellaFish.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		629FD6687C5A7F792244F146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3B485B01B249554BCAFA1099 = {
+						DevelopmentTeam = "";
+					};
+					6EF87C1426FAB29505D854D4 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = C863557E5B1DAC97536B915A /* Build configuration list for PBXProject "StellaFish" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CD8D2728BB58413BB3DD6C60;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EF87C1426FAB29505D854D4 /* StellaFish */,
+				3B485B01B249554BCAFA1099 /* StellaFishTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEF66DB7DCAF64F1BF8F9D20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942634767555F363DE1FFA48 /* README.sample in Resources */,
+				BF1C9F4DE333CB22818B0123 /* cities.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97EC10E5E8C404EDE18FC4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EBDBE7D3D0A10D4DC3C3C6 /* AIView.swift in Sources */,
+				95F96C84569117B7A8B29112 /* AppColors.swift in Sources */,
+				260DAD2988C66870EAB66563 /* ChecklistItem.swift in Sources */,
+				016D31BC36E713FFEE8689FD /* ChecklistView.swift in Sources */,
+				24EDBB7E080E1B1078A62A2E /* City.swift in Sources */,
+				B933E8D5D0454E5019D4CF8B /* ContentView.swift in Sources */,
+				DC867CF944420479DF04BE80 /* DashboardView.swift in Sources */,
+				4879C62FE97040D260EDE672 /* Date+Weekday.swift in Sources */,
+				86D8E9ECCF46C21B3B7FD1C4 /* Double+Currency.swift in Sources */,
+				E703553CC0E0526D87C4A1B1 /* Enums.swift in Sources */,
+				5F20EB614349443A234CE7F8 /* ExpenseListView.swift in Sources */,
+				335CE6595F7F762EEA22A1C8 /* ExpenseParser.swift in Sources */,
+				D3187546335BE77EB8959C27 /* ExpenseRecord.swift in Sources */,
+				5C55FFA559EA289DD3BBAE83 /* ExpenseRepositoryProtocol.swift in Sources */,
+				7B602D9D48F7CFD73F002054 /* HotelCandidate.swift in Sources */,
+				8F77C64564F6A7D353242714 /* LocalExpenseRepository.swift in Sources */,
+				9342C851FEBA113B60410BF2 /* LocalTripRepository.swift in Sources */,
+				7E3B3AF29DCCA46DC62AAE98 /* SettingsView.swift in Sources */,
+				4D3B95A3B3238DE4DA4B5322 /* StellaFishApp.swift in Sources */,
+				10DF2A53787ACD0D850BD82D /* TicketSnapshot.swift in Sources */,
+				E99CBAB9FF38F0D5CF82E83D /* TransportTask.swift in Sources */,
+				F9DA6D1601B76D305D9936FB /* Trip.swift in Sources */,
+				66BEDA4C7C2D130B448A9378 /* TripListView.swift in Sources */,
+				4A2AE1704057BAEB6D03ECC0 /* TripRepositoryProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6E102920F67DEA9E840E8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD20EF0D86EE2F8FFEF7FDAD /* ExpenseParserTests.swift in Sources */,
+				0DA837E20A0D702CFA996DB4 /* TicketCostTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD43C4221285F3904892A1B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EF87C1426FAB29505D854D4 /* StellaFish */;
+			targetProxy = A7B299FC515A7ACA77949BDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00B60C7276BA4425DFAF17DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stellafish.tests;
+				PRODUCT_NAME = StellaFishTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StellaFish.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StellaFish";
+			};
+			name = Release;
+		};
+		06314B6BE3524BD4B6CB2FB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		25152001AE52AF8DAA8C3C23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stellafish.tests;
+				PRODUCT_NAME = StellaFishTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StellaFish.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StellaFish";
+			};
+			name = Debug;
+		};
+		81435B97060F57558C477B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		CCCABE8098D17522C2695E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = StellaFish/Resources/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stellafish.app;
+				PRODUCT_NAME = StellaFish;
+			};
+			name = Debug;
+		};
+		E2D52605222A86CD0E47A3A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = StellaFish/Resources/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stellafish.app;
+				PRODUCT_NAME = StellaFish;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68484859D4E6D945DC6BE2EB /* Build configuration list for PBXNativeTarget "StellaFishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25152001AE52AF8DAA8C3C23 /* Debug */,
+				00B60C7276BA4425DFAF17DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A8D96F995A88033297F525AF /* Build configuration list for PBXNativeTarget "StellaFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCABE8098D17522C2695E36 /* Debug */,
+				E2D52605222A86CD0E47A3A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C863557E5B1DAC97536B915A /* Build configuration list for PBXProject "StellaFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81435B97060F57558C477B46 /* Debug */,
+				06314B6BE3524BD4B6CB2FB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 629FD6687C5A7F792244F146 /* Project object */;
+}

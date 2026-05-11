@@ -28,6 +28,41 @@ final class Trip {
     @Relationship(deleteRule: .cascade, inverse: \ExpenseRecord.trip)
     var expenses: [ExpenseRecord]
 
+    @Relationship(deleteRule: .cascade, inverse: \PackingItem.trip)
+    var packingItems: [PackingItem] = []
+
+    @Relationship(deleteRule: .cascade, inverse: \TrainTicketRecord.trip)
+    var trainTickets: [TrainTicketRecord] = []
+
+    @Relationship(deleteRule: .cascade, inverse: \FlightTicketRecord.trip)
+    var flightTickets: [FlightTicketRecord] = []
+
+    @Relationship(deleteRule: .cascade, inverse: \ReminderItem.trip)
+    var reminders: [ReminderItem] = []
+
+    @Relationship(deleteRule: .cascade, inverse: \MetroRecord.trip)
+    var metroRoutes: [MetroRecord] = []
+
+    @Relationship(deleteRule: .cascade, inverse: \PlaceRecord.trip)
+    var places: [PlaceRecord] = []
+
+    var startDate: Date { departDate }
+    var endDate: Date { returnDate }
+
+    var ticketCount: Int { trainTickets.count + flightTickets.count + metroRoutes.count }
+
+    var pendingReminderCount: Int {
+        reminders.filter { !$0.isDone && $0.remindAt > Date() }.count
+    }
+
+    var nextReminder: ReminderItem? {
+        reminders.filter { !$0.isDone && $0.remindAt > Date() }
+            .min { $0.remindAt < $1.remindAt }
+    }
+
+    var packingCompletedCount: Int { packingItems.filter { $0.isDone }.count }
+    var packingTotalCount: Int { packingItems.count }
+
     init(
         title: String,
         fromCity: String = "",

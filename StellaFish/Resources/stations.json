@@ -1,0 +1,214 @@
+{
+  "cities": [
+    {
+      "name": "北京",
+      "airports": ["首都国际机场 (PEK)", "大兴国际机场 (PKX)"],
+      "trainStations": ["北京站", "北京西站", "北京南站", "北京北站", "北京朝阳站"]
+    },
+    {
+      "name": "上海",
+      "airports": ["虹桥国际机场 (SHA)", "浦东国际机场 (PVG)"],
+      "trainStations": ["上海站", "上海虹桥站", "上海南站", "上海西站"]
+    },
+    {
+      "name": "广州",
+      "airports": ["白云国际机场 (CAN)"],
+      "trainStations": ["广州站", "广州南站", "广州东站", "广州北站"]
+    },
+    {
+      "name": "深圳",
+      "airports": ["宝安国际机场 (SZX)"],
+      "trainStations": ["深圳站", "深圳北站", "深圳西站", "福田站", "深圳东站"]
+    },
+    {
+      "name": "成都",
+      "airports": ["双流国际机场 (CTU)", "天府国际机场 (TFU)"],
+      "trainStations": ["成都站", "成都东站", "成都南站", "成都西站"]
+    },
+    {
+      "name": "重庆",
+      "airports": ["江北国际机场 (CKG)"],
+      "trainStations": ["重庆站", "重庆北站", "重庆西站", "重庆东站"]
+    },
+    {
+      "name": "武汉",
+      "airports": ["天河国际机场 (WUH)"],
+      "trainStations": ["武汉站", "汉口站", "武昌站", "武汉东站"]
+    },
+    {
+      "name": "西安",
+      "airports": ["咸阳国际机场 (XIY)"],
+      "trainStations": ["西安站", "西安北站", "西安南站"]
+    },
+    {
+      "name": "杭州",
+      "airports": ["萧山国际机场 (HGH)"],
+      "trainStations": ["杭州站", "杭州东站", "杭州南站", "杭州西站"]
+    },
+    {
+      "name": "南京",
+      "airports": ["禄口国际机场 (NKG)"],
+      "trainStations": ["南京站", "南京南站", "南京北站"]
+    },
+    {
+      "name": "天津",
+      "airports": ["滨海国际机场 (TSN)"],
+      "trainStations": ["天津站", "天津西站", "天津南站", "天津北站"]
+    },
+    {
+      "name": "苏州",
+      "airports": [],
+      "trainStations": ["苏州站", "苏州北站", "苏州园区站"]
+    },
+    {
+      "name": "厦门",
+      "airports": ["高崎国际机场 (XMN)", "翔安国际机场 (XMN)"],
+      "trainStations": ["厦门站", "厦门北站", "厦门翔安站"]
+    },
+    {
+      "name": "青岛",
+      "airports": ["胶东国际机场 (TAO)"],
+      "trainStations": ["青岛站", "青岛北站", "红岛站"]
+    },
+    {
+      "name": "济南",
+      "airports": ["遥墙国际机场 (TNA)"],
+      "trainStations": ["济南站", "济南西站", "济南东站"]
+    },
+    {
+      "name": "长沙",
+      "airports": ["黄花国际机场 (CSX)"],
+      "trainStations": ["长沙站", "长沙南站", "长沙西站"]
+    },
+    {
+      "name": "昆明",
+      "airports": ["长水国际机场 (KMG)"],
+      "trainStations": ["昆明站", "昆明南站", "昆明北站"]
+    },
+    {
+      "name": "哈尔滨",
+      "airports": ["太平国际机场 (HRB)"],
+      "trainStations": ["哈尔滨站", "哈尔滨西站", "哈尔滨东站"]
+    },
+    {
+      "name": "沈阳",
+      "airports": ["桃仙国际机场 (SHE)"],
+      "trainStations": ["沈阳站", "沈阳北站", "沈阳南站"]
+    },
+    {
+      "name": "大连",
+      "airports": ["周水子国际机场 (DLC)"],
+      "trainStations": ["大连站", "大连北站"]
+    },
+    {
+      "name": "郑州",
+      "airports": ["新郑国际机场 (CGO)"],
+      "trainStations": ["郑州站", "郑州东站", "郑州南站"]
+    },
+    {
+      "name": "福州",
+      "airports": ["长乐国际机场 (FOC)"],
+      "trainStations": ["福州站", "福州南站"]
+    },
+    {
+      "name": "南昌",
+      "airports": ["昌北国际机场 (KHN)"],
+      "trainStations": ["南昌站", "南昌西站", "南昌东站"]
+    },
+    {
+      "name": "合肥",
+      "airports": ["新桥国际机场 (HFE)"],
+      "trainStations": ["合肥站", "合肥南站", "合肥西站"]
+    },
+    {
+      "name": "贵阳",
+      "airports": ["龙洞堡国际机场 (KWE)"],
+      "trainStations": ["贵阳站", "贵阳北站", "贵阳东站"]
+    },
+    {
+      "name": "南宁",
+      "airports": ["吴圩国际机场 (NNG)"],
+      "trainStations": ["南宁站", "南宁东站", "南宁北站"]
+    },
+    {
+      "name": "海口",
+      "airports": ["美兰国际机场 (HAK)"],
+      "trainStations": ["海口站", "海口东站"]
+    },
+    {
+      "name": "三亚",
+      "airports": ["凤凰国际机场 (SYX)"],
+      "trainStations": ["三亚站", "三亚东站"]
+    },
+    {
+      "name": "兰州",
+      "airports": ["中川国际机场 (LHW)"],
+      "trainStations": ["兰州站", "兰州西站", "兰州新区站"]
+    },
+    {
+      "name": "乌鲁木齐",
+      "airports": ["地窝堡国际机场 (URC)"],
+      "trainStations": ["乌鲁木齐站", "乌鲁木齐南站"]
+    },
+    {
+      "name": "宁波",
+      "airports": ["栎社国际机场 (NGB)"],
+      "trainStations": ["宁波站", "宁波东站", "宁波南站"]
+    },
+    {
+      "name": "温州",
+      "airports": ["龙湾国际机场 (WNZ)"],
+      "trainStations": ["温州站", "温州南站"]
+    },
+    {
+      "name": "珠海",
+      "airports": ["金湾国际机场 (ZUH)"],
+      "trainStations": ["珠海站", "珠海北站", "拱北站"]
+    },
+    {
+      "name": "无锡",
+      "airports": ["硕放国际机场 (WUX)"],
+      "trainStations": ["无锡站", "无锡东站", "无锡新区站"]
+    },
+    {
+      "name": "南通",
+      "airports": ["兴东国际机场 (NTG)"],
+      "trainStations": ["南通站", "南通西站"]
+    },
+    {
+      "name": "佛山",
+      "airports": [],
+      "trainStations": ["佛山站", "佛山西站", "顺德站"]
+    },
+    {
+      "name": "东莞",
+      "airports": [],
+      "trainStations": ["虎门站", "东莞站", "东莞南站"]
+    },
+    {
+      "name": "拉萨",
+      "airports": ["贡嘎国际机场 (LXA)"],
+      "trainStations": ["拉萨站", "拉萨南站"]
+    },
+    {
+      "name": "桂林",
+      "airports": ["两江国际机场 (KWL)"],
+      "trainStations": ["桂林站", "桂林北站", "桂林西站"]
+    },
+    {
+      "name": "丽江",
+      "airports": ["三义国际机场 (LJG)"],
+      "trainStations": ["丽江站"]
+    },
+    {
+      "name": "张家界",
+      "airports": ["荷花国际机场 (DYG)"],
+      "trainStations": ["张家界站", "张家界西站"]
+    },
+    {
+      "name": "黄山",
+      "airports": ["屯溪国际机场 (TXN)"],
+      "trainStations": ["黄山北站", "黄山站"]
+    }
+  ]
+}

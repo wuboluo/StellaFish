@@ -19,7 +19,6 @@ enum TripPreference: String, Codable, CaseIterable {
 enum TransportType: String, Codable, CaseIterable {
     case plane = "飞机"
     case highSpeedTrain = "高铁/动车"
-    case train = "普通火车"
     case bus = "汽车/大巴"
     case selfDrive = "自驾"
     case other = "其他"
@@ -28,7 +27,6 @@ enum TransportType: String, Codable, CaseIterable {
         switch self {
         case .plane: return 120
         case .highSpeedTrain: return 40
-        case .train: return 40
         case .bus: return 30
         case .selfDrive: return 0
         case .other: return 30
@@ -39,7 +37,6 @@ enum TransportType: String, Codable, CaseIterable {
         switch self {
         case .plane: return 50
         case .highSpeedTrain: return 10
-        case .train: return 10
         case .bus: return 40
         case .selfDrive: return 60
         case .other: return 20
@@ -50,11 +47,14 @@ enum TransportType: String, Codable, CaseIterable {
         switch self {
         case .plane: return 40
         case .highSpeedTrain: return 10
-        case .train: return 30
         case .bus: return 40
         case .selfDrive: return 80
         case .other: return 20
         }
+    }
+
+    var supportsStationPicker: Bool {
+        self == .plane || self == .highSpeedTrain
     }
 }
 

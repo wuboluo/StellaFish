@@ -81,10 +81,9 @@ final class TicketSnapshot {
         mainDurationMinutes + transferMinutes + extraMinutes
     }
 
-    func totalCost(people: Int, timeValuePerHour: Double) -> Double {
+    func totalCost(people: Int, timeValuePerHour: Double = 0) -> Double {
         guard seatStatus != .noTicket else { return Double.infinity }
         let ticketTotal = price * Double(people)
-        let timeTotal = (Double(doorToDoorMinutes) / 60.0) * timeValuePerHour * Double(people)
-        return ticketTotal + transferCost + baggageCost + timeTotal + riskCost + hassleCost
+        return ticketTotal + transferCost + baggageCost + riskCost + hassleCost
     }
 }

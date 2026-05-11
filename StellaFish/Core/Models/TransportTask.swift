@@ -54,6 +54,11 @@ final class TransportTask {
         set { transportTypesRaw = newValue.map(\.rawValue) }
     }
 
+    var primaryTransportType: TransportType {
+        get { transportTypes.first ?? .highSpeedTrain }
+        set { transportTypes = [newValue] }
+    }
+
     var targetSeatStatus: SeatStatus {
         get { SeatStatus(rawValue: targetSeatStatusRaw) ?? .notChecked }
         set { targetSeatStatusRaw = newValue.rawValue }

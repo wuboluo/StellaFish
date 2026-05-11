@@ -3,35 +3,30 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            DashboardView()
-                .tabItem {
-                    Label("首页", systemImage: "house.fill")
-                }
+            NavigationStack {
+                TripOverviewView()
+            }
+            .tabItem { Label("旅行", systemImage: "airplane.departure") }
 
-            TripListView()
-                .tabItem {
-                    Label("计划", systemImage: "map.fill")
-                }
+            NavigationStack {
+                PackingView()
+            }
+            .tabItem { Label("清单", systemImage: "checklist") }
 
-            ChecklistView()
-                .tabItem {
-                    Label("清单", systemImage: "checklist")
-                }
+            NavigationStack {
+                TransportRecordView()
+            }
+            .tabItem { Label("交通", systemImage: "tram.fill") }
 
-            ExpenseListView()
-                .tabItem {
-                    Label("记账", systemImage: "yensign.circle.fill")
-                }
+            NavigationStack {
+                PlacesView()
+            }
+            .tabItem { Label("地点", systemImage: "mappin.and.ellipse") }
 
-            AIView()
-                .tabItem {
-                    Label("AI", systemImage: "sparkles")
-                }
-
-            SettingsView()
-                .tabItem {
-                    Label("设置", systemImage: "gearshape.fill")
-                }
+            NavigationStack {
+                RemindersView()
+            }
+            .tabItem { Label("提醒", systemImage: "bell") }
         }
         .tint(AppColors.primary)
     }
